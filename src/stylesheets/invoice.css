@@ -1,0 +1,111 @@
+.bgm{
+	background: rgba(255,255,255,1);
+	border: 1px solid rgba(100,100,100,0.5);	
+}
+
+#logo{
+  font-family: 'Baumans', cursive !important;
+  font-size: inherit;
+}
+*{
+  font-weight: 200;
+}
+
+address {
+  margin-bottom: inherit;
+}
+
+.bgm {
+  border: 0px;
+}
+.block-header {
+  margin-bottom: 4em;
+}
+
+.table>thead>tr>td {
+  padding: 1.5em;
+  padding-bottom: 0;
+}
+
+#section-to-print {
+  padding: 1em 8em;
+}
+
+dt {
+  opacity: 0.6;
+}
+.c-gray {
+  opacity: 0.6;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.invoice-actions {
+  padding: 1em 20em 2em 20em;
+}
+.table {
+  margin-bottom: 0;
+}
+.table>thead>tr>th {
+  border: 0px;
+}
+.table > tbody {
+  border: 0px;
+}
+.table>tbody>tr>td {
+  border: 0px;
+}
+@media (max-width: 600px){
+    .alert{
+      display: none;
+    }
+
+    body{
+      font-size: 12px;
+    }
+
+    #logo{
+
+      height: 35px; 
+      width: auto;
+    }
+    .container{
+      padding-left: 0px;
+    }
+    h2{
+      font-size: 14px;
+    }
+    .c-gray{
+      font-size: 10px;
+    }
+    #booking_id{
+      display: none;
+    }
+    .col-xs-3{
+      width: 33.33%;
+    }
+    .table > thead > tr > td:first-child{
+      padding: 0px;
+    }
+}
+
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #section-to-print, #section-to-print * {
+    visibility: visible;
+  }
+  #section-to-print {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .invoice-actions {
+    visibility: hidden !important;
+  }
+  *{
+    font-weight: 200;
+  }
+}

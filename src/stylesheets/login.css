@@ -1,0 +1,22 @@
+@media(max-width: 700px){
+  .page-header h2 {
+    font-size: 1.4em;
+  }
+  .form-wrapper {
+    padding: 2% 10% !important;
+  }
+  .container {
+    padding: 10px;
+  }
+}
+.form-wrapper {
+  padding: 2% 30%;
+}
+
+.btn-facebook {
+  border-bottom: 4px solid #4267B2 !important;
+  color: #4267B2 !important;
+}
+.btn-google {
+  border-bottom: 4px solid #DD4B39 !important;
+}

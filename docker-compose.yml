@@ -1,0 +1,14 @@
+version: '2'
+services:
+  web:
+    build: .
+    image: react-homigo:latest
+    ports:
+      - "5002:5000"
+    dns: "8.8.8.8"
+    #volumes:
+    #  - ".:/app"
+    command: bash -c "serve -s build"
+    container_name: react_prod
+    restart: always
+
